@@ -1,0 +1,69 @@
+@font-face {
+    font-family: "domo";
+    src: url('../font/master_of_break.ttf');
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url('../font/BEBAS___.TTF');
+}
+
+@font-face {
+    font-family: "comic";
+    src: url('../font/SpaceComics.ttf');
+}
+
+@font-face {
+    font-family: "happy";
+    src: url('../font/KGHAPPY.ttf');
+}
+
+@font-face {
+    font-family: "cand";
+    src: url('../font/jcandlestickacad.ttf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
+
+::selection{
+  background-color: #d0181e;
+  color: white;
+}
+
+::-moz-selection {
+  background-color: #d0181e;
+  color: white;
+}
+
+.brand-logo{
+  font-family: "happy", Helvetica, Arial, sans-serif;
+  margin-left: 1%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff2e2e), to(#d0181e));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
+  transition: 1s opacity;
+}
+
+.video-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+a{
+  font-family: "happy", Helvetica, Arial, sans-serif;
+}
