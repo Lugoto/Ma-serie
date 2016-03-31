@@ -20,7 +20,7 @@
      <a href="#!" class="brand-logo">MA-SERIE.COM</a>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
      <ul class="right hide-on-med-and-down">
-       <a class="red darken-2 waves-effect waves-light btn-large hvr-buzz">Commencer le test</a>
+       <li><a class="red darken-2 waves-effect waves-light btn-large hvr-buzz">Commencer le test</a></li>
      </ul>
      <ul class="side-nav" id="mobile-demo">
        <li><a href="index.php">Home</a></li>
@@ -41,6 +41,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
     <script>
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
