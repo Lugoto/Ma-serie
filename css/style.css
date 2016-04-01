@@ -1,3 +1,8 @@
+body{
+  overflow: hidden;
+}
+
+
 @font-face {
     font-family: "domo";
     src: url('../font/master_of_break.ttf');
@@ -43,7 +48,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 video {
   position: fixed;
   top: 50%;
@@ -66,4 +70,46 @@ video {
 
 a{
   font-family: "happy", Helvetica, Arial, sans-serif;
+}
+
+#test{
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin:auto;
+  top: 6vh;
+  border-radius: 10px;
+}
+
+.marge{
+  margin-left: 2%;
+  width: 50%;
+  font-family: "happy", Helvetica, Arial, sans-serif;
+  margin-top: 3%;
+}
+
+.titre{
+  font-family: "happy", Helvetica, Arial, sans-serif;
+  color: #d0181e;
+  text-align: center;
+    font-size: 2vw;
+}
+
+.input-field{
+  color: white !important;
+  font-size: 1em !important;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  #test{
+    width: 100vw;
+    height: 100vh;
+    top: 0vh;
+    border-radius: 0px;
+  }
+  .titre{
+    font-size: 20px;
+  }
 }

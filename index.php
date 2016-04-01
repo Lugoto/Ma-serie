@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="css/animate.css"/>
     <link type="text/css" rel="stylesheet" href="css/hover.css" media="all">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="jquery-1.12.0.min.js"></script>
     <title></title>
   </head>
 
@@ -20,11 +21,11 @@
      <a href="#!" class="brand-logo">MA-SERIE.COM</a>
      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
      <ul class="right hide-on-med-and-down">
-       <li><a class="red darken-2 waves-effect waves-light btn-large hvr-buzz">Commencer le test</a></li>
+       <li><a class="red darken-2 btn-large hvr-buzz commencer">Commencer le test</a></li>
+       <li><a class="red darken-2 btn-large commencer2 disabled">Le test a commencé</a></li>
      </ul>
      <ul class="side-nav" id="mobile-demo">
-       <li><a href="index.php">Home</a></li>
-       <li><a href="test.php">Test</a></li>
+       <li><a class="commencer">Commencer le test</a></li>
      </ul>
    </div>
  </nav>
@@ -36,7 +37,28 @@
   <div id="mute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_up</i></div>
   <div id="unmute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_off</i></div>
 
-
+  <div id="test" class="animated fadeInUp">
+    <div class="titre">Trouve la série qui te correspond</div>
+    <div class="fixed-action-btn horizontal" style="top: 20px; right: 20px;">
+      <a class="btn-floating btn-large grey darken-4 quit">X</a>
+    </div>
+    <div class="input-field col s6 marge">
+    <select multiple>
+      <option value="1">Drame</option>
+      <option value="2">Fantastique</option>
+      <option value="3">Aventure</option>
+    </select>
+    <label>Quels thèmes préfère tu ?</label>
+  </div>
+  <div class="input-field col s6 marge">
+  <select multiple>
+    <option value="1">Drame</option>
+    <option value="2">Fantastique</option>
+    <option value="3">Aventure</option>
+  </select>
+  <label>Quels thèmes préfère tu ?</label>
+</div>
+  </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -46,7 +68,11 @@
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
       })
+      $(document).ready(function() {
+      $('select').material_select();
+      });
     </script>
+
 
   </body>
 </html>
