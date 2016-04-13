@@ -20,12 +20,6 @@
     #nav {
       text-align: center;
     }
-    #share {
-      top: -9px;
-    }
-    #credits {
-      top: -15px;
-    }
 
     .cloud9-item{
       height: 70%;    }
@@ -38,12 +32,8 @@
     <footer>
       <p id="item-title"></p>
       <div id="nav" class="noselect">
-        <button class="left btn-floating btn-large waves-effect waves-light red">
-          ←
-        </button>
-        <button class="right btn-floating btn-large waves-effect waves-light red">
-          →
-        </button>
+        <button class="btn-floating btn-large red" id="left"><i class="material-icons right">skip_previous</i></button>
+        <button class="btn-floating btn-large red" id="right"><i class="material-icons right">skip_next</i></button>
       </div>
   </div>
   <script src="js/lib/jquery.js"></script>
@@ -57,11 +47,11 @@
         yOrigin: 42,
         yRadius: 48,
         mirror: {
-          gap: 12,
+          gap: 6,
           height: 0.2
         },
-        buttonLeft: $("#nav > .left"),
-        buttonRight: $("#nav > .right"),
+        buttonLeft: $("#nav > #left"),
+        buttonRight: $("#nav > #right"),
         autoPlay: 1,
         bringToFront: true,
         onRendered: rendered,
@@ -95,12 +85,12 @@
         switch( e.keyCode ) {
           /* left arrow */
           case 37:
-            $('#nav > .left').click()
+            $('#nav > #left').click()
             break
 
           /* right arrow */
           case 39:
-            $('#nav > .right').click()
+            $('#nav > #right').click()
         }
       } )
     })

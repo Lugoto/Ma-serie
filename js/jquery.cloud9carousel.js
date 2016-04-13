@@ -87,8 +87,6 @@
 
       var style = this.element.style;
       style.zIndex = "" + (scale * 100) | 0;
-      style.height=120%;
-      style.width=120%;
 
       if( transform && options.transforms ) {
         style[transform] = "translate(" + x + "px, " + y + "px) scale(" + scale + ")";
@@ -377,10 +375,10 @@
         transforms: true,     // enable CSS transforms
         smooth: true,         // enable smooth animation via requestAnimationFrame()
         fps: 30,              // fixed frames per second (if smooth animation is off)
-        speed: 4,             // positive number
-        autoPlay: 0,          // [ 0: off | number of items (integer recommended, positive is clockwise) ]
-        autoPlayDelay: 4000,
-        bringToFront: false,
+        speed: 10,           // positive number
+        autoPlay: 0 ,          // [ 0: off | number of items (integer recommended, positive is clockwise) ]
+        autoPlayDelay: 1000,
+        bringToFront: true,
         itemClass: 'cloud9-item',
         handle: 'carousel'
       }, options );

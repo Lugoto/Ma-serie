@@ -46,7 +46,6 @@ $(document).ready(function(){
             type:"POST",
             url:"php/request.php",
             success:function(){
-             alert("Echo");
             }
         });
     });

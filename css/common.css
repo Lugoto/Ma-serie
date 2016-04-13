@@ -16,15 +16,6 @@ body {
   margin: 0;
   overflow-x: hidden;
 }
-a {
-  font-weight: bold;
-  text-decoration: none;
-}
-h1 {
-  color: #BEC5D6;
-  font-family: sans-serif;
-  text-shadow: 2px 3px 3px #127E7A;
-}
 .wrap {
   width: 980px; /* fixed width, centered in viewport */
   left: -490px;
@@ -41,10 +32,6 @@ h1 {
 }
 #showcase img {
   cursor: pointer;
-}
-footer {
-  display: block;
-  position: relative;
 }
 #get {
   font-size: 20px;
