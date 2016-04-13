@@ -25,8 +25,10 @@ function muteUnmuteHandler(e) {
 }
 
 $(document).ready(function(){
-  $( "#test" ).hide();
-  $( ".commencer2" ).hide();
+  // $( "#test" ).hide();
+  // $( ".commencer2" ).hide();
+
+
   $( ".commencer" ).click(function() {
     $( "#test" ).show();
     $( ".commencer" ).hide();
@@ -37,4 +39,16 @@ $(document).ready(function(){
     $( ".commencer2" ).hide();
     $( ".commencer" ).show();
   });
+
+
+    $("#submitButton").click(function () {
+        $.ajax({
+            type:"POST",
+            url:"php/request.php",
+            success:function(){
+             alert("Echo");
+            }
+        });
+    });
+
 });

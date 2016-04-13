@@ -1,78 +1,94 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <link rel="icon" href="favicon.ico" />
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css"/>
-    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
-    <link type="text/css" rel="stylesheet" href="css/hover.css" media="all">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <script src="jquery-1.12.0.min.js"></script>
-    <title></title>
-  </head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+        <link rel="icon" href="favicon.ico"/>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+        <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+        <link type="text/css" rel="stylesheet" href="css/hover.css" media="all">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="js/jquery-1.12.3.min.js"></script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+        <title>Ma-Serie</title>
+    </head>
+    <body>
+        <nav>
+            <div class="grey darken-4 nav-wrapper">
+                <a href="#!" class="brand-logo">MA-SERIE.COM</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="red darken-2 btn-large hvr-buzz commencer">Commencer le test</a></li>
+                    <li><a class="red darken-2 btn-large commencer2 disabled">Le test a commencé</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a class="commencer">Commencer le test</a></li>
+                </ul>
+            </div>
+        </nav>
+        <video id="daredevil" autoplay poster="img/img_daredevil.jpg" id="bgvid" loop>
+            <source src="video/daredevil.mp4" type="video/mp4">
+        </video>
+        <div id="mute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_up</i></div>
+        <div id="unmute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_off</i></div>
+        <div id="test" class="animated fadeInUp">
+            <div class="titre">Trouve la série qui te correspond !</div>
+            <div class="fixed-action-btn horizontal" style="top: 20px; right: 20px;">
+                <a class="btn-floating btn-large grey darken-4 quit">X</a>
+            </div>
 
-  <body>
+            <form action="php/request.php" method="post">
+                <div class="input-field col s6 marge">
+                    <select name="select">
+                        <option value="0" disabled selected>Choisis ton genre</option>
+                        <option value="28">Action</option>
+                        <option value="12">Adventure</option>
+                        <option value="16">Animation</option>
+                        <option value="35">Comedy</option>
+                        <option value="80">Crime</option>
+                        <option value="99">Documentary</option>
+                        <option value="18">Drama</option>
+                        <option value="10751">Family</option>
+                        <option value="14">Fantasy</option>
+                        <option value="10769">Foreign</option>
+                        <option value="36">History</option>
+                        <option value="27">Horror</option>
+                        <option value="10402">Music</option>
+                        <option value="9648">Mystery</option>
+                        <option value="10749">Romance</option>
+                        <option value="878">Science Fiction</option>
+                        <option value="10770">TV Movie</option>
+                        <option value="53">Thriller</option>
+                        <option value="10752">War</option>
+                        <option value="37">Western</option>
+                    </select>
+                    <label>Quels thèmes préfère tu ?</label>
 
-    <nav>
-   <div class="grey darken-4 nav-wrapper">
-     <a href="#!" class="brand-logo">MA-SERIE.COM</a>
-     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-     <ul class="right hide-on-med-and-down">
-       <li><a class="red darken-2 btn-large hvr-buzz commencer">Commencer le test</a></li>
-       <li><a class="red darken-2 btn-large commencer2 disabled">Le test a commencé</a></li>
-     </ul>
-     <ul class="side-nav" id="mobile-demo">
-       <li><a class="commencer">Commencer le test</a></li>
-     </ul>
-   </div>
- </nav>
+                    <button class="btn waves-effect waves-light red" id="submitButton" type="submit" name="action" value="submit">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </form>
 
-  <video id="daredevil" autoplay  poster="img/img_daredevil.jpg" id="bgvid" loop>
-  <source src="video/daredevil.mp4" type="video/mp4">
-  </video>
-
-  <div id="mute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_up</i></div>
-  <div id="unmute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_off</i></div>
-
-  <div id="test" class="animated fadeInUp">
-    <div class="titre">Trouve la série qui te correspond</div>
-    <div class="fixed-action-btn horizontal" style="top: 20px; right: 20px;">
-      <a class="btn-floating btn-large grey darken-4 quit">X</a>
-    </div>
-    <div class="input-field col s6 marge">
-    <select multiple>
-      <option value="1">Drame</option>
-      <option value="2">Fantastique</option>
-      <option value="3">Aventure</option>
-    </select>
-    <label>Quels thèmes préfère tu ?</label>
-  </div>
-  <div class="input-field col s6 marge">
-  <select multiple>
-    <option value="1">Drame</option>
-    <option value="2">Fantastique</option>
-    <option value="3">Aventure</option>
-  </select>
-  <label>Quels thèmes préfère tu ?</label>
-</div>
-  </div>
-
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/materialize.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-    <script>
-      $( document ).ready(function(){
-        $(".button-collapse").sideNav();
-      })
-      $(document).ready(function() {
-      $('select').material_select();
-      });
-    </script>
-
-
-  </body>
+        </div>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+        <script type="text/javascript" src="js/materialize.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script>
+            $(document).ready(function () {
+                $(".button-collapse").sideNav();
+            })
+            $(document).ready(function () {
+                $('select').material_select();
+            });
+        </script>
+    </body>
 </html>

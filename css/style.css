@@ -80,6 +80,7 @@ a{
   margin:auto;
   top: 6vh;
   border-radius: 10px;
+  display: none;
 }
 
 .marge{
@@ -100,6 +101,10 @@ a{
   color: white !important;
   font-size: 1em !important;
   padding-bottom: 10px;
+}
+
+.commencer2{
+  display: none;
 }
 
 @media screen and (max-width: 1000px) {
