@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-        <link rel="icon" href="favicon.ico"/>
-        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
-        <link type="text/css" rel="stylesheet" href="css/style.css"/>
-        <link type="text/css" rel="stylesheet" href="css/animate.css"/>
-        <link type="text/css" rel="stylesheet" href="css/hover.css" media="all">
-        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <script src="js/jquery-1.12.3.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
-        <title>Ma-Serie</title>
-    </head>
+<?php include("./html/header.html");?>
     <body>
         <nav>
             <div class="grey darken-4 nav-wrapper">
