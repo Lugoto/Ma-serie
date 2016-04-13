@@ -24,7 +24,7 @@
                 <a class="btn-floating btn-large grey darken-4 quit">X</a>
             </div>
 
-            <form action="php/request.php" method="post">
+            <form action="html.php" method="post">
                 <div class="input-field col s6 marge">
                     <select name="select">
                         <option value="0" disabled selected>Choisis ton genre</option>
