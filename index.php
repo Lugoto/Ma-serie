@@ -5,11 +5,10 @@
                 <a href="#!" class="brand-logo">MA-SERIE.COM</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="red darken-2 btn-large hvr-buzz commencer">Commencer le test</a></li>
-                    <li><a class="red darken-2 btn-large commencer2 disabled">Le test a commencé</a></li>
+                    <li><a class="red darken-2 btn-large hvr-buzz" id="commencer">Commencer le test</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a class="commencer">Commencer le test</a></li>
+                    <li><a id="commencer">Commencer le test</a></li>
                 </ul>
             </div>
         </nav>
@@ -19,15 +18,25 @@
         <div id="mute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_up</i></div>
         <div id="unmute-btn" class="video-controls btn-floating btn-large red  darken-2 animated fadeInRight"><i class="material-icons">volume_off</i></div>
         <div id="test" class="animated fadeInUp">
-            <div class="titre">Trouve la série qui te correspond !</div>
+            <div class="titre">Trouve la série qui te correspond</div>
             <div class="fixed-action-btn horizontal" style="top: 20px; right: 20px;">
                 <a class="btn-floating btn-large grey darken-4 quit">X</a>
             </div>
 
             <form action="html.php" method="post">
+
+              <p>
+                </br>
+               <input class="with-gap red" name="group1" type="radio" id="test2"  />
+               <label for="test2">Green</label>
+             </p>
+              <p>
+               <input class="with-gap" name="group1" type="radio" id="test3"  />
+               <label for="test3">Green</label>
+             </p>
                 <div class="input-field col s6 marge">
                     <select name="select">
-                        <option value="0" disabled selected>Choisis ton genre</option>
+                        <option value="0" disabled selected>Genre</option>
                         <option value="28">Action</option>
                         <option value="12">Adventure</option>
                         <option value="16">Animation</option>
@@ -49,7 +58,6 @@
                         <option value="10752">War</option>
                         <option value="37">Western</option>
                     </select>
-                    <label>Quels thèmes préfère tu ?</label>
 
                     <button class="btn waves-effect waves-light red" id="submitButton" type="submit" name="action" value="submit">Submit
                         <i class="material-icons right">send</i>

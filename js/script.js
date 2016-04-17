@@ -25,19 +25,14 @@ function muteUnmuteHandler(e) {
 }
 
 $(document).ready(function(){
-  // $( "#test" ).hide();
-  // $( ".commencer2" ).hide();
 
-
-  $( ".commencer" ).click(function() {
+  $( "#commencer" ).click(function() {
     $( "#test" ).show();
-    $( ".commencer" ).hide();
-    $( ".commencer2" ).show();
+    $( "#commencer" ).hide();
   });
   $( ".quit" ).click(function() {
     $( "#test" ).hide();
-    $( ".commencer2" ).hide();
-    $( ".commencer" ).show();
+    $( "#commencer" ).show();
   });
 
 

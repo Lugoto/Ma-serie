@@ -74,12 +74,13 @@ a{
 
 #test{
   position: relative;
-  width: 70vw;
-  height: 70vh;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.4);
   margin:auto;
-  top: 6vh;
-  border-radius: 10px;
+}
+
+#commencer{
   display: none;
 }
 
@@ -100,20 +101,13 @@ a{
 .input-field{
   color: white !important;
   font-size: 1em !important;
-  padding-bottom: 10px;
+  padding-bottom: 4vh;
 }
 
-.commencer2{
-  display: none;
+p{
+  margin-left: 3vh;
 }
-
 @media screen and (max-width: 1000px) {
-  #test{
-    width: 100vw;
-    height: 100vh;
-    top: 0vh;
-    border-radius: 0px;
-  }
   .titre{
     font-size: 20px;
   }
