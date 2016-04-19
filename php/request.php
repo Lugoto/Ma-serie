@@ -1,7 +1,8 @@
 <?php
 //    print_r($_POST);
 
-    $json = file_get_contents('https://api.themoviedb.org/3/genre/'.$_POST['select'].'/movies?api_key=2605db3bb9a62669d5158c263210dea4');
+    $json = file_get_contents('https://api.themoviedb.org/3/genre/'.$_POST['select'].'/movies?api_key=2605db3bb9a62669d5158c263210dea4&language=fr&include_image_language=fr');
+    // $json = file_get_contents('https://api.themoviedb.org/3/tv/popular?api_key=2605db3bb9a62669d5158c263210dea4');
     $json = json_decode($json);
 //    print_r($json["results"]);
 

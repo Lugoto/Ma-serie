@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  background-color: black;
+}
+
+.element img{
+  float: left;
+  width: 20vw;
+  margin-left: 4%;
+  margin-top: 3%;
+}

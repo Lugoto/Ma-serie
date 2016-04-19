@@ -24,16 +24,6 @@
             </div>
 
             <form action="html.php" method="post">
-
-              <p>
-                </br>
-               <input class="with-gap red" name="group1" type="radio" id="test2"  />
-               <label for="test2">Green</label>
-             </p>
-              <p>
-               <input class="with-gap" name="group1" type="radio" id="test3"  />
-               <label for="test3">Green</label>
-             </p>
                 <div class="input-field col s6 marge">
                     <select name="select">
                         <option value="0" disabled selected>Genre</option>
@@ -42,7 +32,7 @@
                         <option value="16">Animation</option>
                         <option value="35">Comedy</option>
                         <option value="80">Crime</option>
-                        <option value="99">Documentary</option>
+                        <!-- <option value="99">Documentary</option> -->
                         <option value="18">Drama</option>
                         <option value="10751">Family</option>
                         <option value="14">Fantasy</option>

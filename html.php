@@ -1,6 +1,6 @@
 <!doctype html>
 <?php include("./html/header.html");?>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <title>Cloud 9 Carousel: JS / HTML5 / CSS3</title>
@@ -35,7 +35,6 @@
         <button class="btn-floating btn-large red" id="left"><i class="material-icons right">skip_previous</i></button>
         <button class="btn-floating btn-large red" id="right"><i class="material-icons right">skip_next</i></button>
       </div>
-  </div>
   <script src="js/lib/jquery.js"></script>
   <script src="js/lib/jquery.reflection.js"></script>
   <script src="js/lib/jquery.cloud9carousel.js"></script>
