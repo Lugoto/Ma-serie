@@ -1,5 +1,5 @@
 <?php include("./html/header.html");?>
-<?php $select = "film" ?>
+<?php include("./php/request2.php");?>
     <body>
         <nav>
             <div class="nav-wrapper">
@@ -57,8 +57,23 @@
                 </div>
             </form>
 
-        </div>
-        </div>
+
+            <div class= "faded">
+            <div id="headerMrS">
+              <?php
+              for ($i=0; $i<15; $i++){
+                if (preg_match("#jpg#", $json->results[$i]->poster_path)) {
+            echo '<div class="header '  .$i.  '">
+                Sorties
+              		<div class="header-content">
+                  <img src="http://image.tmdb.org/t/p/w500'.$json->results[$i]->poster_path.'" alt="">
+                    <div class="button-next button-' .($i+1). '"></div>
+              			<div class="button-prev button-' .($i-1). '"></div>
+              		</div>
+                </div>';}}
+              ?>
+            </div>
+          </div>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -72,6 +87,46 @@
             $(document).ready(function () {
                 $('select').material_select();
             });
+            $(document).ready(function(){
+              	$("#headerMrS > div:gt(0)").hide();
+
+              		var carouselInt = '';
+
+              	var carouDiv = function(){
+              	    carouselInt = setInterval(function() {
+              	      $('#headerMrS > div:first')
+              	        .fadeOut(3000)
+              	        .next()
+              	        .fadeIn(3000)
+              	        .end()
+              	        .appendTo('#headerMrS');
+              	    },  5000);
+              	};
+
+              	$(carouDiv());//Initialise the carousel function
+
+              	$("#headerMrS").hover(function(){//Stop the carousel on hover
+              	 clearInterval(carouselInt);
+              	  },function(){
+              	  carouDiv();
+              	});
+
+
+
+              	//Direction Arrow links
+              	$(".button-sales").click(function(){
+              		$(".header").fadeOut(800);
+              		$(".sales").animate({opacity:"show"},800);
+              	});
+              	$(".button-modern").click(function(){
+              		$(".header").fadeOut(800);
+              		$(".modern").animate({opacity:"show"},800);
+              	});
+              	$(".button-antique").click(function(){
+              		$(".header").fadeOut(800);
+              		$(".antique").animate({opacity:"show"},800);
+              	});
+              });
         </script>
     </body>
 </html>

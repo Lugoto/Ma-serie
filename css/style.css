@@ -135,3 +135,24 @@ p{
     font-size: 20px;
   }
 }
+
+#headerMrS img{
+  height: 30vh;
+  width: 21vh;
+  -moz-box-shadow: 0px 30px 80px 0px #2f2f2f;
+  -webkit-box-shadow: 0px 30px 80px 0px #2f2f2f;
+  -o-box-shadow: 0px 30px 80px 0px #2f2f2f;
+  box-shadow: 0px 30px 80px 0px #2f2f2f;
+  filter:progid:DXImageTransform.Microsoft.Shadow(color=#2f2f2f, Direction=180, Strength=80);
+}
+.header {
+  position: fixed;
+  left: 50%;
+  margin-left: -10vh;
+  bottom: 0px;
+  padding-top: auto;
+  text-align: center;
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
+  font-size: 3vh;
+  color: #0386c9;
+}
