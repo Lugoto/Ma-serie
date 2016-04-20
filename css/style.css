@@ -48,7 +48,6 @@ body{
 .nav-wrapper {
   background-color: #0386c9;
   border-bottom: 5px solid #dbd9d9;
-  outline-color: red;
 }
 
 .brand-logo{
@@ -96,8 +95,6 @@ a{
 .marge{
   width: 50%;
   font-family: "bebas", Helvetica, Arial, sans-serif;
-  margin-top: 3%;
-  padding-left: 10px !important;
 }
 
 .titre{
@@ -113,16 +110,14 @@ a{
   font-size: 1em !important;
   padding-bottom: 4vh;
   margin: 0 auto;
-  width: 30wm;
-}
-
-.input{
-  padding-left: 10px;
+  width: 30vw;
 }
 
 .select-dropdown{
   border-bottom: 3px solid #dbd9d9 !important;
 }
+
+
 
 span{
   color: #0386c9 !important;
