@@ -1,27 +1,3 @@
-/*
- * Cloud 9 Carousel 2.0.4
- *   3D perspective carousel plugin for jQuery/Zepto with a focus on slick
- *   performance, based on the original CloudCarousel by Professor Cloud.
- *
- * See the demo and get the latest version:
- *   http://specious.github.io/cloud9carousel/
- *
- * Copyright (c) 2015 by Ildar Sagdejev ( http://specious.github.io )
- * Copyright (c) 2011 by R. Cecco ( http://www.professorcloud.com )
- *
- * MIT License
- *
- * Please retain this copyright header in all versions of the software
- *
- * Requires:
- *  - jQuery 1.3.0 or later -OR- Zepto 1.1.1 or later
- *
- * Optional (jQuery only):
- *  - Reflection support via reflection.js plugin by Christophe Beyls
- *     http://www.digitalia.be/software/reflectionjs-for-jquery
- *  - Mousewheel support via mousewheel plugin
- *     http://plugins.jquery.com/mousewheel/
- */
 
 ;(function($) {
   //

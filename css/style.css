@@ -28,24 +28,31 @@ body{
     src: url('../font/jcandlestickacad.ttf');
 }
 
+@font-face {
+    font-family: "picifico";
+    src: url('../font/pacifico.ttf');
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
 
 ::selection{
-  background-color: #d0181e;
+  background-color: #0386c9;
   color: white;
 }
 
 ::-moz-selection {
-  background-color: #d0181e;
+  background-color: #0386c9;
   color: white;
 }
 
+.nav-wrapper {
+  background-color: #0386c9;
+}
+
 .brand-logo{
-  font-family: "happy", Helvetica, Arial, sans-serif;
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
   margin-left: 1%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#ff2e2e), to(#d0181e));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  color: white;
 }
 
 video {
@@ -76,7 +83,7 @@ a{
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #e8e8e8;
   margin:auto;
 }
 
@@ -87,21 +94,28 @@ a{
 .marge{
   margin-left: 2%;
   width: 50%;
-  font-family: "happy", Helvetica, Arial, sans-serif;
+  font-family: "bebas", Helvetica, Arial, sans-serif;
   margin-top: 3%;
 }
 
 .titre{
-  font-family: "happy", Helvetica, Arial, sans-serif;
-  color: #d0181e;
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
+  color: #0386c9;
   text-align: center;
     font-size: 2vw;
+    padding: 2%;
 }
 
 .input-field{
-  color: white !important;
+  color: #c7c7c7 !important;
   font-size: 1em !important;
   padding-bottom: 4vh;
+  margin: 0 auto;
+
+}
+
+.blanc {
+  background-color: white;
 }
 
 p{
