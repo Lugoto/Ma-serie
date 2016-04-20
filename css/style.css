@@ -47,6 +47,8 @@ body{
 
 .nav-wrapper {
   background-color: #0386c9;
+  border-bottom: 5px solid #dbd9d9;
+  outline-color: red;
 }
 
 .brand-logo{
@@ -92,10 +94,10 @@ a{
 }
 
 .marge{
-  margin-left: 2%;
   width: 50%;
   font-family: "bebas", Helvetica, Arial, sans-serif;
   margin-top: 3%;
+  padding-left: 10px !important;
 }
 
 .titre{
@@ -107,11 +109,23 @@ a{
 }
 
 .input-field{
-  color: #c7c7c7 !important;
+  color: #bfbfbf !important;
   font-size: 1em !important;
   padding-bottom: 4vh;
   margin: 0 auto;
+  width: 30wm;
+}
 
+.input{
+  padding-left: 10px;
+}
+
+.select-dropdown{
+  border-bottom: 3px solid #dbd9d9 !important;
+}
+
+span{
+  color: #0386c9 !important;
 }
 
 .blanc {

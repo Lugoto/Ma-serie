@@ -16,7 +16,7 @@
             <div class="titre">Trouve la série qui te correspond</div>
 
             <form action="html.php" method="post">
-                <div class="input-field col s6 marge">
+                <div class="input-field marge">
                   <div class="blanc">
                     <select name="select">
                         <option value="0" disabled selected>Genre</option>
@@ -43,9 +43,7 @@
                     </select>
                   </div>
 
-                    <button class="btn waves-effect waves-light red" id="submitButton" type="submit" name="action" value="submit">Submit
-                        <i class="material-icons right">send</i>
-                    </button>
+                    <button class="btn waves-effect waves-light blue darken-2" id="submitButton" type="submit" name="action" value="submit">Submit</button>
                 </div>
             </form>
 
