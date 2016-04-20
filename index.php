@@ -62,13 +62,12 @@
             <div id="headerMrS">
               <?php
               for ($i=0; $i<15; $i++){
+                // si pas d'image alors ne saffiche pas
                 if (preg_match("#jpg#", $json->results[$i]->poster_path)) {
             echo '<div class="header '  .$i.  '">
                 Sorties
               		<div class="header-content">
                   <img src="http://image.tmdb.org/t/p/w500'.$json->results[$i]->poster_path.'" alt="">
-                    <div class="button-next button-' .($i+1). '"></div>
-              			<div class="button-prev button-' .($i-1). '"></div>
               		</div>
                 </div>';}}
               ?>
