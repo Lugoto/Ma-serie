@@ -29,8 +29,8 @@ body{
 }
 
 @font-face {
-    font-family: "picifico";
-    src: url('../font/pacifico.ttf');
+    font-family: "pacifico";
+    src: url('../font/Pacifico.ttf');
 }
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
@@ -110,7 +110,7 @@ a{
   font-size: 1em !important;
   padding-bottom: 4vh;
   margin: 0 auto;
-  width: 30vw;
+  width: 40vw;
 }
 
 .select-dropdown{
@@ -130,13 +130,8 @@ span{
 p{
   margin-left: 3vh;
 }
-@media screen and (max-width: 1000px) {
-  .titre{
-    font-size: 20px;
-  }
-}
 
-#headerMrS img{
+#headerMrS img, #headerMrS2 img{
   height: 30vh;
   width: 21vh;
   -moz-box-shadow: 0px 30px 80px 0px #2f2f2f;
@@ -145,14 +140,35 @@ p{
   box-shadow: 0px 30px 80px 0px #2f2f2f;
   filter:progid:DXImageTransform.Microsoft.Shadow(color=#2f2f2f, Direction=180, Strength=80);
 }
+
 .header {
   position: fixed;
-  left: 50%;
-  margin-left: -10vh;
   bottom: 0px;
   padding-top: auto;
   text-align: center;
   font-family: "pacifico", Helvetica, Arial, sans-serif;
   font-size: 3vh;
   color: #0386c9;
+}
+
+.sorties{
+  left: 60%;
+  margin-left: -10.5vh;
+}
+
+.ensalle{
+  left: 40%;
+  margin-left: -10.5vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .titre{
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headerMrS2, .ensalle, .faded2, .faded, .headerMrS2 .sorties{
+    display: none;
+  }
 }
