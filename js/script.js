@@ -28,15 +28,6 @@ function muteUnmuteHandler(e) {
 
 $(document).ready(function(){
 
-  $( "#commencer" ).click(function() {
-    $( "#test" ).show();
-    $( "#commencer" ).hide();
-  });
-  $( ".quit" ).click(function() {
-    $( "#test" ).hide();
-    $( "#commencer" ).show();
-  });
-
 
     $("#submitButton").click(function () {
         $.ajax({

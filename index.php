@@ -5,18 +5,17 @@
             <div class="nav-wrapper">
                 <a href="http://lucaspozzer.com" class="brand-logo">Series&Movies</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="red darken-2 btn-large hvr-buzz" id="commencer">Commencer le test</a></li>
-                </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a id="commencer">Commencer le test</a></li>
                 </ul>
+            </div>
+            <div class="alpha">
+              <img src="img/alpha.png" alt="" />
             </div>
         </nav>
         <div id="test">
             <div class="titre">Trouve ton film ou ta série !</div>
 
-            <form action="html.php" method="post">
+            <form action="results.php" method="post">
                 <div class="input-field marge">
                   <div class="blanc">
                     <select name="select">
@@ -91,6 +90,9 @@
             ?>
           </div>
         </div>
+      </div>
+
+      <a class="btn-floating btn-large blue darken-2" href="#aide"><i class="material-icons">code</i></a>
 
 
 

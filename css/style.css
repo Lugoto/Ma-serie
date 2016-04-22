@@ -56,26 +56,6 @@ body{
   color: white;
 }
 
-video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-size: cover;
-  transition: 1s opacity;
-}
-
-.video-controls {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
 a{
   font-family: "happy", Helvetica, Arial, sans-serif;
 }
@@ -85,11 +65,6 @@ a{
   width: 100vw;
   height: 100vh;
   background-color: #e8e8e8;
-  margin:auto;
-}
-
-#commencer{
-  display: none;
 }
 
 .marge{
@@ -117,18 +92,12 @@ a{
   border-bottom: 3px solid #dbd9d9 !important;
 }
 
-
-
 span{
   color: #0386c9 !important;
 }
 
 .blanc {
   background-color: white;
-}
-
-p{
-  margin-left: 3vh;
 }
 
 #headerMrS img, #headerMrS2 img{
@@ -154,11 +123,30 @@ p{
 .sorties{
   left: 60%;
   margin-left: -10.5vh;
+  height: auto;
 }
 
 .ensalle{
   left: 40%;
   margin-left: -10.5vh;
+}
+
+.alpha{
+  z-index: 1;
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+}
+
+.alpha img{
+  width: 100px;
+}
+
+#aide{
+  z-index: 30;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -167,7 +155,7 @@ p{
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
   .headerMrS2, .ensalle, .faded2, .faded, .headerMrS2 .sorties{
     display: none;
   }
