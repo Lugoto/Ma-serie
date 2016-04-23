@@ -72,6 +72,11 @@ a{
   font-family: "bebas", Helvetica, Arial, sans-serif;
 }
 
+.marge2{
+  width: 50%;
+  font-family: "bebas", Helvetica, Arial, sans-serif;
+}
+
 .titre{
   font-family: "pacifico", Helvetica, Arial, sans-serif;
   color: #0386c9;
@@ -80,12 +85,16 @@ a{
     padding: 2%;
 }
 
-.input-field{
+.marge{
   color: #bfbfbf !important;
   font-size: 1em !important;
   padding-bottom: 4vh;
   margin: 0 auto;
   width: 40vw;
+}
+
+.marge2{
+  color: #8b8b8b !important;
 }
 
 .select-dropdown{
@@ -112,7 +121,7 @@ span{
 
 .header {
   position: fixed;
-  bottom: 0px;
+  bottom: 2%;
   padding-top: auto;
   text-align: center;
   font-family: "pacifico", Helvetica, Arial, sans-serif;
@@ -133,25 +142,142 @@ span{
 
 .alpha{
   z-index: 1;
-  position: absolute;
-  bottom: -30px;
-  right: 0px;
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
 }
 
 .alpha img{
   width: 100px;
 }
 
-#aide{
+.aide{
   z-index: 30;
   position: fixed;
   bottom: 1%;
   left: 1%;
 }
 
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.envoie{
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #009f45;
+  font-size: 3vh;
+}
+
+.no{
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #af1c29;
+  font-size: 3vh;
+}
+
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+
+.modalDialog > div {
+	width: 50vw;
+	position: relative;
+	margin: 2% auto;
+	padding: 10px 20px 13px 20px;
+	border-radius: 10px;
+	background-color: #e8e8e8;
+}
+
+.espace{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  font-family: "pacifico", Helvetica, Arial, sans-serif;
+  font-size: 3vh;
+  color: #0386c9;
+  padding-bottom: 5%;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+    /* label color */
+   .input-field label {
+     color: #0386c9;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #0386c9;
+   }
+   .input-field textarea[type=text]:focus + label {
+     color: #0386c9;
+   }
+   .input-field input[type=email]:focus + label {
+     color: #0386c9;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #0386c9;
+     box-shadow: 0 1px 0 0 #0386c9;
+   }
+   .input-field textarea[type=text]:focus {
+     border-bottom: 1px solid #0386c9;
+     box-shadow: 0 1px 0 0 #0386c9;
+   }
+   .input-field input[type=email]:focus {
+     border-bottom: 1px solid #0386c9;
+     box-shadow: 0 1px 0 0 #0386c9;
+   }
+
+.close:hover { background: #0386c9; }
+
+.btnchercher{
+  font-family: "bebas", Helvetica, Arial, sans-serif;
+}
+
 @media screen and (max-width: 1000px) {
   .titre{
     font-size: 20px;
+  }
+  .modalDialog > div {
+  	width: 100vw;
+    height: 100%;
+  }
+  .close {
+    line-height: 30px;
+  	right: 10px;
+  	top: 10px;
+    width: 30px;
   }
 }
 

@@ -1,15 +1,31 @@
-<?php include("./html/header.html");?>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+    <link type="text/css" rel="stylesheet" href="css/animate.css"/>
+    <link type="text/css" rel="stylesheet" href="css/hover.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="lib/could9carousel/jquery.cloud9carousel.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <title>Series&Movies</title>
+</head>
+
 
     <body>
         <nav>
             <div class="nav-wrapper">
                 <a href="http://lucaspozzer.com" class="brand-logo">Series&Movies</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                <ul class="side-nav" id="mobile-demo">
-                </ul>
-            </div>
-            <div class="alpha">
-              <img src="img/alpha.png" alt="" />
+                <ul class="side-nav" id="mobile-demo"></ul>
             </div>
         </nav>
         <div id="test">
@@ -92,8 +108,64 @@
         </div>
       </div>
 
-      <a class="btn-floating btn-large blue darken-2" href="#aide"><i class="material-icons">code</i></a>
+    <div id="openModal" class="modalDialog">
+      <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <div class="espace">Un bug, une idée ou une information?</br>Envoyez nous un mail.</div>
+      <div class="row">
+          <form action="php/mail.php" method="post" class="col s12">
+            <div class="row">
+              <div class="input-field col s6 marge2">
+                <input name="prenom" id="prenom" type="text" class="validate text-blue text-darken-2">
+                <label for="prenom">Votre prenom</label>
+            </div>
+              <div class="input-field col s6 marge2">
+                <input name="nom" id="nom" type="text" class="validate text-blue text-darken-2">
+                <label for="nom">Votre nom</label>
+            </div>
+          </div>
+            <div class="row">
+              <div class="input-field col s12 marge2">
+                <input name="mail" id="email" type="email" class="validate text-blue text-darken-2">
+                <label for="email">Votre mail</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 marge2">
+                <input name="sujet" id="sujet" type="text" class="validate">
+                <label for="sujet">Sujet</label>
+              </div>
+            </div>
+            <div class="row">
+            <div class="input-field col s12 marge2">
+              <textarea name="message" id="message" class="materialize-textarea validate" type="text"></textarea>
+              <label for="textarea1">Message</label>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light blue darken-2 btnchercher" id="submitButton" type="submit" name="action" value="submit">Envoyer</button>
+          </form>
+        </div>
+    </div>
+    </div>
 
+    <div id="openModal2" class="modalDialog">
+      <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <div class="envoie">L'email c'est bien envoyé.</div>
+    </div>
+    </div>
+
+    <div id="openModal3" class="modalDialog">
+      <div>
+      <a href="#close" title="Close" class="close">X</a>
+      <div class="no">Une erreur c'est produite lors de l'envois de l'email.</div>
+    </div>
+    </div>
+
+      <a class="btn-floating btn-large blue darken-2 aide" href="#openModal"><i class="material-icons">code</i></a>
+      <div class="alpha">
+        <img src="img/alpha.png" alt="" />
+      </div>
 
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
