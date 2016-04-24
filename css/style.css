@@ -1,31 +1,9 @@
 body{
   overflow: hidden;
 }
-
-
-@font-face {
-    font-family: "domo";
-    src: url('../font/master_of_break.ttf');
-}
-
 @font-face {
     font-family: "bebas";
     src: url('../font/BEBAS___.TTF');
-}
-
-@font-face {
-    font-family: "comic";
-    src: url('../font/SpaceComics.ttf');
-}
-
-@font-face {
-    font-family: "happy";
-    src: url('../font/KGHAPPY.ttf');
-}
-
-@font-face {
-    font-family: "cand";
-    src: url('../font/jcandlestickacad.ttf');
 }
 
 @font-face {
@@ -33,7 +11,7 @@ body{
     src: url('../font/Pacifico.ttf');
 }
 
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,600);
+@import url(https://fonts.googleapis.com/css?family=Roboto:900);
 
 ::selection{
   background-color: #0386c9;
@@ -74,7 +52,8 @@ a{
 
 .marge2{
   width: 50%;
-  font-family: "bebas", Helvetica, Arial, sans-serif;
+  font-family: "roboto", Helvetica, Arial, sans-serif;
+  font-weight: 900;
 }
 
 .titre{
@@ -166,12 +145,14 @@ span{
 	bottom: 0;
 	left: 0;
 	background: rgba(0,0,0,0.8);
-	z-index: 99999;
+	z-index: 99998;
 	opacity:0;
 	-webkit-transition: opacity 400ms ease-in;
 	-moz-transition: opacity 400ms ease-in;
 	transition: opacity 400ms ease-in;
 	pointer-events: none;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 .envoie{
@@ -196,7 +177,7 @@ span{
 .modalDialog > div {
 	width: 50vw;
 	position: relative;
-	margin: 2% auto;
+	margin: 5% auto;
 	padding: 10px 20px 13px 20px;
 	border-radius: 10px;
 	background-color: #e8e8e8;
@@ -207,7 +188,7 @@ span{
   height: auto;
   text-align: center;
   font-family: "pacifico", Helvetica, Arial, sans-serif;
-  font-size: 3vh;
+  font-size: 1.5em;
   color: #0386c9;
   padding-bottom: 5%;
 }
@@ -217,9 +198,9 @@ span{
 	color: #FFFFFF;
 	line-height: 25px;
 	position: absolute;
-	right: -12px;
+	right: 5px;
 	text-align: center;
-	top: -10px;
+	top: 5px;
 	width: 24px;
 	text-decoration: none;
 	font-weight: bold;
@@ -229,6 +210,7 @@ span{
 	-moz-box-shadow: 1px 1px 3px #000;
 	-webkit-box-shadow: 1px 1px 3px #000;
 	box-shadow: 1px 1px 3px #000;
+  z-index: 99999;
 }
 
     /* label color */
@@ -265,13 +247,18 @@ span{
   font-family: "bebas", Helvetica, Arial, sans-serif;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
   .titre{
     font-size: 20px;
   }
+  .modalDialog {
+  	height: auto;
+  }
   .modalDialog > div {
   	width: 100vw;
-    height: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 0px;
   }
   .close {
     line-height: 30px;
@@ -279,9 +266,6 @@ span{
   	top: 10px;
     width: 30px;
   }
-}
-
-@media screen and (max-width: 800px) {
   .headerMrS2, .ensalle, .faded2, .faded, .headerMrS2 .sorties{
     display: none;
   }
