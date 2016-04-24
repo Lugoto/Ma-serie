@@ -31,5 +31,7 @@ $json = file_get_contents('https://api.themoviedb.org/3/discover/movie?'.$select
 $json = json_decode($json);
 
 for ($i=0; $i<15; $i++){
+  if (preg_match("#jpg#", $json->results[$i]->poster_path)) {
    echo '<img class="reflect cloud9-item" src="http://image.tmdb.org/t/p/w500'.$json->results[$i]->poster_path.'" alt="">';
+ }
 }
