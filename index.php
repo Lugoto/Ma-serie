@@ -33,6 +33,15 @@
 
             <form action="results.php" method="post">
                 <div class="input-field marge">
+
+                  <div class="blanc">
+                    <select name="fs">
+                        <option value="0" disabled selected>   Films ou Series</option>
+                        <option value="movie">  Films</option>
+                        <option value="tv">  Series</option>
+                    </select>
+                  </div>
+
                   <div class="blanc">
                     <select name="select">
                         <option value="0" disabled selected>   Genre</option>
@@ -194,7 +203,7 @@
     <div id="openModal2" class="modalDialog">
       <div>
       <a href="#close" title="Close" class="close">X</a>
-      <div class="envoie">L'email c'est bien envoyé.</div>
+      <div class="envoie">L'email s'est bien envoyé.</div>
     </div>
     </div>
 
@@ -273,6 +282,15 @@
                 	  carouDiv();
                 	});
                 });
+                // google analytics
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-76825458-1', 'auto');
+                ga('send', 'pageview');
+
         </script>
     </body>
 </html>
